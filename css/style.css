@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background: #4aa879;
+  color: yellow;
+  font-size: 2.5em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: #4aa879;
+}
+footer a {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 2.2em;
+  color: yellow;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
