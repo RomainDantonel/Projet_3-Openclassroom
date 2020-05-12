@@ -1,11 +1,82 @@
+body {
+  width: 70%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 200px;
   background: #4aa879;
   color: yellow;
+  font-size: 3.5em;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 2.5em;
+  width: 30%;
+  height: 600px;
+  margin: 50px 50px 50px 50px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 10px 3px #e0e0e0;
+  background: #ffd8d8;
+}
+
+.menu2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5em;
+  width: 30%;
+  height: 600px;
+  margin: 50px 50px 50px 50px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 10px 3px #e0e0e0;
+  background: #faedfc;
+}
+
+.menu3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5em;
+  width: 30%;
+  height: 600px;
+  margin: 50px 50px 50px 50px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 10px 3px #e0e0e0;
+  background: #f2f2f2;
+}
+
+.menu4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5em;
+  width: 30%;
+  height: 600px;
+  margin: 50px 50px 50px 50px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 10px 3px #e0e0e0;
 }
 
 footer {
@@ -19,9 +90,23 @@ footer {
 footer a {
   padding-right: 20px;
   padding-left: 20px;
-  font-size: 2.2em;
+  font-size: 2.5em;
   color: yellow;
-  text-decoration: none;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 100px;
+  background: #4aa879;
+  border-radius: 15px 15px 15px 15px;
+  color: yellow;
+  font-size: 3.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

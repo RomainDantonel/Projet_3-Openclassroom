@@ -1,11 +1,59 @@
+@mixin cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2.5em;
+	width: 30%;
+	height: 600px;
+	margin: 50px 50px 50px 50px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 3px 3px 10px 3px rgb(224, 224, 224);
+}
+
+body {
+	width: 70%;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
 header {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 200px;
 	background: rgb(74, 168, 121);
 	color: yellow;
-	font-size: 2.5em;
+	font-size: 3.5em;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.menu1 {
+	@include cards;
+	background: rgb(255, 216, 216);
+}
+
+.menu2 {
+	@include cards;
+	background: rgb(250, 237, 252);
+}
+
+.menu3 {
+	@include cards;
+	background: rgb(242, 242, 242);
+}
+
+.menu4 {
+	@include cards; 
 }
 
 footer {
@@ -19,8 +67,22 @@ footer {
 	a {
 		padding-right:20px;
 		padding-left:20px;
-		font-size: 2.2em;
+		font-size: 2.5em;
 		color: yellow;
-		text-decoration: none;
 	}
+}
+
+.soon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 50%;
+	height: 100px;
+	background: rgb(74, 168, 121);
+	border-radius: 15px 15px 15px 15px;
+	color: yellow;
+	font-size: 3.5em;
 }
