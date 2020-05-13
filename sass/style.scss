@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'alexbrush';
+    src: url('css/AlexBrush-Regular.ttf');
+}
+
+$greenbg: rgb(74, 168, 121);
+$yellowtxt: yellow;
+
 @mixin cards {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 1.6em;
 	width: 30%;
 	height: 600px;
 	margin: 50px 50px 50px 50px;
@@ -14,6 +22,7 @@
 body {
 	width: 70%;
 	margin: auto;
+	margin-bottom: 200px;
 }
 
 a {
@@ -26,8 +35,8 @@ header {
 	align-items: center;
 	width: 100%;
 	height: 200px;
-	background: rgb(74, 168, 121);
-	color: yellow;
+	background: $greenbg;
+	color: $yellowtxt;
 	font-size: 3.5em;
 }
 
@@ -39,38 +48,24 @@ header {
 
 .menu1 {
 	@include cards;
-	background: rgb(255, 216, 216);
+	background: #ffd8d8;
+	font-family: 'alexbrush';
 }
 
 .menu2 {
 	@include cards;
-	background: rgb(250, 237, 252);
+	background: #faedfc;
 }
 
 .menu3 {
 	@include cards;
-	background: rgb(242, 242, 242);
+	background: #f2f2f2;
 }
 
 .menu4 {
 	@include cards; 
 }
 
-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	height: 100px;
-	background: rgb(74, 168, 121);
-
-	a {
-		padding-right:20px;
-		padding-left:20px;
-		font-size: 2.5em;
-		color: yellow;
-	}
-}
 
 .soon {
 	display: flex;
@@ -81,8 +76,26 @@ footer {
 	margin-bottom: 50px;
 	width: 50%;
 	height: 100px;
-	background: rgb(74, 168, 121);
+	background: $greenbg;
 	border-radius: 15px 15px 15px 15px;
-	color: yellow;
+	color: $yellowtxt;
 	font-size: 3.5em;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	height: 100px;
+	background-color: $greenbg;
+	position: fixed;
+	bottom:0;
+	
+	a {
+		padding-right:20px;
+		padding-left:20px;
+		font-size: 2.5em;
+		color: $yellowtxt;
+	}
 }

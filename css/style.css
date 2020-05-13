@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "alexbrush";
+  src: url("css/AlexBrush-Regular.ttf");
+}
 body {
   width: 70%;
   margin: auto;
+  margin-bottom: 200px;
 }
 
 a {
@@ -29,13 +34,14 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.6em;
   width: 30%;
   height: 600px;
   margin: 50px 50px 50px 50px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
   background: #ffd8d8;
+  font-family: "alexbrush";
 }
 
 .menu2 {
@@ -43,7 +49,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.6em;
   width: 30%;
   height: 600px;
   margin: 50px 50px 50px 50px;
@@ -57,7 +63,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.6em;
   width: 30%;
   height: 600px;
   margin: 50px 50px 50px 50px;
@@ -71,27 +77,12 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.6em;
   width: 30%;
   height: 600px;
   margin: 50px 50px 50px 50px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  background: #4aa879;
-}
-footer a {
-  padding-right: 20px;
-  padding-left: 20px;
-  font-size: 2.5em;
-  color: yellow;
 }
 
 .soon {
@@ -107,6 +98,23 @@ footer a {
   border-radius: 15px 15px 15px 15px;
   color: yellow;
   font-size: 3.5em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100px;
+  background-color: #4aa879;
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 2.5em;
+  color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
