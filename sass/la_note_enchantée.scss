@@ -1,7 +1,5 @@
-@font-face {
-    font-family: 'alexbrush';
-    src: url('css/AlexBrush-Regular.ttf');
-}
+$greenbg: rgb(74, 168, 121);
+$yellowtxt: yellow;
 
 @keyframes shake {
   10%, 90% {
@@ -21,24 +19,11 @@
   }
 }
 
-$greenbg: rgb(74, 168, 121);
-$yellowtxt: yellow;
-
-@mixin cards {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 1.6em;
-	width: 30%;
-	height: 600px;
-	margin: 50px 50px 50px 50px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 3px 3px 10px 3px rgb(224, 224, 224);
-}
-
 body {
 	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: auto;
 	margin-bottom: 200px;
 }
@@ -58,46 +43,73 @@ header {
 	font-size: 3.5em;
 }
 
-.menu {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.titre {
+	font-size: 3em;
+	margin-bottom: 20px;
 }
 
-.menu1 {
-	@include cards;
+.card {
+	width:70%;
+	height: 1200px;
+	margin: 0px 50px 50px 50px;
+	padding-right: 80px;
+	padding-left: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align:center;
+	font-size: 1.3em;
+	box-shadow: 3px 3px 10px 3px rgb(224, 224, 224);
 	background: #ffd8d8;
-	font-family: 'alexbrush';
-}
-
-.menu2 {
-	@include cards;
-	background: #faedfc;
-}
-
-.menu3 {
-	@include cards;
-	background: #f2f2f2;
-}
-
-.menu4 {
-	@include cards; 
-}
 
 
-.soon {
+	.entete {
+	margin-bottom: 30px;
+	}
+
+	.titre-menu {
+	display: flex;
+	align-items: center;
+	.img1 {
+	align-items: left;
+	}
+	.img2 {
+	align-items: right;
+	}
+	}
+
+	.entree {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	}
+
+	.plat {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+
+	}
+
+	.menu {
+	text-align: left;
+	}
+
+	.prix
+	{
+	text-align: right;
+	}
+
+	.pied {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	margin: auto;
+	align-items: baseline;
 	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 50%;
-	height: 100px;
-	background: $greenbg;
-	border-radius: 15px 15px 15px 15px;
-	color: $yellowtxt;
-	font-size: 3.5em;
+
+	.fas {
+	 margin-right: 5px;
+	 }
+	}
 }
 
 footer {

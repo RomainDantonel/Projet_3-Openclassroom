@@ -1,0 +1,122 @@
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-2px);
+  }
+  20%, 80% {
+    transform: translateX(2px);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-4px);
+  }
+  40%, 60% {
+    transform: translateX(4px);
+  }
+}
+body {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background: #4aa879;
+  color: yellow;
+  font-size: 3.5em;
+}
+
+.titre {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 70%;
+  height: 1200px;
+  margin: 0px 50px 50px 50px;
+  padding-right: 80px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.3em;
+  box-shadow: 3px 3px 10px 3px #e0e0e0;
+  background: #ffd8d8;
+}
+.card .entete {
+  margin-bottom: 30px;
+}
+.card .titre-menu {
+  display: flex;
+  align-items: center;
+}
+.card .titre-menu .img1 {
+  align-items: left;
+}
+.card .titre-menu .img2 {
+  align-items: right;
+}
+.card .entree {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.card .plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.card .menu {
+  text-align: left;
+}
+.card .prix {
+  text-align: right;
+}
+.card .pied {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 50px;
+}
+.card .pied .fas {
+  margin-right: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100px;
+  background-color: #4aa879;
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 2.5em;
+  color: yellow;
+}
+
+.mention:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.contact:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/*# sourceMappingURL=la_note_enchant%C3%A9e.css.map */
