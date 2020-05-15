@@ -1,0 +1,27 @@
+$greenbg: rgb(74, 168, 121);
+$yellowtxt: yellow;
+
+@mixin cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 30%;
+	height: 600px;
+	margin: 50px 50px 50px 50px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 3px 3px 10px 3px rgb(224, 224, 224);
+}
+
+@mixin animenu {
+	transform: scale(1);
+	opacity: 1;
+	transition: transform opacity 2000ms;
+}
+
+@mixin animhover {
+	:hover {
+		transform: scale(1.4);
+		opacity: 0.5;
+	}
+}

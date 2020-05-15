@@ -1,8 +1,8 @@
 @import "./utils/variables";
 
 @font-face {
-    font-family: 'alexbrush';
-    src: url('fonts/AlexBrush-Regular.ttf');
+	font-family: 'roman';
+	src: url('fonts/Roman_SD.ttf');
 }
 
 @keyframes shake {
@@ -46,13 +46,15 @@ header {
 
 .titre {
 	font-size: 3em;
-	color: rgb(79, 55, 55);
 	margin-bottom: 20px;
+	background: -webkit-linear-gradient(left, #d68f48, #a055d6);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 .card {
 	width:70%;
-	height: 1600px;
+	height: 1400px;
 	margin: 0px 50px 50px 50px;
 	padding-right: 80px;
 	padding-left: 80px;
@@ -60,28 +62,27 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	text-align:center;
-	font-family: 'alexbrush', Arial, Verdana, sans-serif;
-	font-size: 1.8em;
+	font-family: 'roman', Arial, Verdana, sans-serif;
+	font-size: 1.1em;
 	font-weight: bold;
 	box-shadow: 3px 3px 10px 3px rgb(224, 224, 224);
-	background: #ffd8d8;
-	color: rgb(79, 55, 55);
-
-	.fas {
-	background: -webkit-linear-gradient(left, #e83a3a, #e58639);
+	background: #faedfc;
+	h2, h3, p {
+	background: -webkit-linear-gradient(left, #d68f48, #a055d6);
   	-webkit-background-clip: text;
- 	-webkit-text-fill-color: transparent;
-	}
-
+  	-webkit-text-fill-color: transparent;
+  	}
 
 	.entete {
-	margin-bottom: 30px;
+	margin-bottom: 100px;
+	font-size: 1.4em;
 	}
 
 	.titre-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
+	margin-top: 80px;
 	}
 
 	.entree {
@@ -104,17 +105,6 @@ header {
 	.prix
 	{
 	text-align: right;
-	}
-
-	.pied {
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
-	margin-top: 50px;
-
-	.fas {
-	 margin-right: 5px;
-	 }
 	}
 }
 

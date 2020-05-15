@@ -1,3 +1,5 @@
+@import "./utils/variables";
+
 @font-face {
     font-family: 'alexbrush';
     src: url('fonts/AlexBrush-Regular.ttf');
@@ -46,21 +48,6 @@
     }
 }
 
-$greenbg: rgb(74, 168, 121);
-$yellowtxt: yellow;
-
-@mixin cards {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 30%;
-	height: 600px;
-	margin: 50px 50px 50px 50px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 3px 3px 10px 3px rgb(224, 224, 224);
-}
-
 body {
 	width: 70%;
 	margin: auto;
@@ -80,6 +67,7 @@ header {
 	background: $greenbg;
 	color: $yellowtxt;
 	font-size: 3.5em;
+	font-family: Comic sans MS, Arial, Verdana, sans-serif; 
 }
 
 .menu {
@@ -94,6 +82,8 @@ header {
 	font-family: 'alexbrush', Arial, Verdana, sans-serif;
 	font-size: 2em;
 	font-weight: bold;
+	@include animenu;
+	@include animhover;
 	.fas {
 	background: -webkit-linear-gradient(left, #e83a3a, #e58639);
   	-webkit-background-clip: text;
@@ -110,6 +100,8 @@ header {
 	font-family: 'roman', Arial, Verdana, sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
+	@include animenu;
+	@include animhover;
 	h2 {
 	color: #d68f48;
 	}
@@ -126,6 +118,8 @@ header {
 	font-family: 'calli', Arial, Verdana, sans-serif;
 	font-size: 1.6em;
 	font-weight: bold;
+	@include animenu;
+	@include animhover;
 	a {
 	background: -webkit-linear-gradient(left, #1e30ed, #5db8f4);
   	-webkit-background-clip: text;
@@ -138,6 +132,8 @@ header {
 	font-family: 'kings', Arial, Verdana, sans-serif;
 	font-size: 1.6em;
 	font-weight: bold;
+	@include animenu;
+	@include animhover;
 	a {
 	background: -webkit-linear-gradient(left, #0e960c, #aff7b7);
   	-webkit-background-clip: text;
