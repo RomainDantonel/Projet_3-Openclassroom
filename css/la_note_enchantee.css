@@ -57,6 +57,8 @@ header {
   width: 100%;
   height: 200px;
   background: #4aa879;
+}
+header a {
   color: yellow;
   font-family: Comic sans MS, Arial, Verdana, sans-serif;
   font-size: 3.5em;
@@ -70,18 +72,15 @@ header {
 
 .card {
   width: 70%;
-  height: 1600px;
-  margin: 0px 50px 50px 50px;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding: 150px 50px 150px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: "alexbrush", Arial, Verdana, sans-serif;
-  font-size: 1.8em;
   font-weight: bold;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
+  font-family: "alexbrush", Arial, Verdana, sans-serif;
+  font-size: 1.8em;
   background: #ffd8d8;
   color: #4f3737;
 }
@@ -90,13 +89,22 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card .entete {
-  margin-bottom: 30px;
-}
 .card .titre-menu {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card .titre-menu img {
+  width: 30%;
+}
+.card .titre-menu .underline {
+  text-decoration: none;
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.card .titre-menu .underline:hover {
+  background-size: 100% 100%;
 }
 .card .entree {
   display: flex;

@@ -14,6 +14,23 @@
   font-family: "kings";
   src: url("fonts/Kingthings_Foundation.ttf");
 }
+@keyframes dot {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -47,22 +64,6 @@
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-@keyframes point {
-  0% {
-    top: 60px;
-    height: 5px;
-    border-radius: 50px 50px 25px 25px;
-    transform: scaleX(1.7);
-  }
-  40% {
-    height: 20px;
-    border-radius: 50%;
-    transform: scaleX(1);
-  }
-  100% {
-    top: 0%;
   }
 }
 body {
@@ -107,13 +108,19 @@ header {
   font-family: "alexbrush", Arial, Verdana, sans-serif;
   font-size: 2em;
   font-weight: bold;
+}
+.menu1 a {
   transform: scale(1);
   opacity: 1;
-  transition: transform opacity 2000ms;
+  transition: transform 0.5s;
 }
-.menu1 :hover {
+.menu1:hover a {
   transform: scale(1.4);
   opacity: 0.5;
+}
+.menu1 p {
+  font-size: 2.3em;
+  margin-top: 0px;
 }
 .menu1 .fas {
   background: -webkit-linear-gradient(left, #e83a3a, #e58639);
@@ -136,20 +143,23 @@ header {
   box-shadow: 3px 3px 10px 3px #e0e0e0;
   background: #faedfc;
   font-family: "roman", Arial, Verdana, sans-serif;
-  font-size: 1.2em;
   font-weight: bold;
+}
+.menu2 a {
   transform: scale(1);
   opacity: 1;
-  transition: transform opacity 2000ms;
+  transition: transform 0.5s;
 }
-.menu2 :hover {
+.menu2:hover a {
   transform: scale(1.4);
   opacity: 0.5;
 }
-.menu2 h2 {
+.menu2 p {
+  font-size: 1.7em;
   color: #d68f48;
 }
-.menu2 p {
+.menu2 h2 {
+  font-size: 1.2em;
   background: -webkit-linear-gradient(left, #d68f48, #a055d6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -167,15 +177,20 @@ header {
   box-shadow: 3px 3px 10px 3px #e0e0e0;
   background: #f2f2f2;
   font-family: "calli", Arial, Verdana, sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: bold;
+}
+.menu3 a {
   transform: scale(1);
   opacity: 1;
-  transition: transform opacity 2000ms;
+  transition: transform 0.5s;
 }
-.menu3 :hover {
+.menu3:hover a {
   transform: scale(1.4);
   opacity: 0.5;
+}
+.menu3 p {
+  font-size: 1.6em;
 }
 .menu3 a {
   background: -webkit-linear-gradient(left, #1e30ed, #5db8f4);
@@ -194,15 +209,20 @@ header {
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
   font-family: "kings", Arial, Verdana, sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: bold;
+}
+.menu4 a {
   transform: scale(1);
   opacity: 1;
-  transition: transform opacity 2000ms;
+  transition: transform 0.5s;
 }
-.menu4 :hover {
+.menu4:hover a {
   transform: scale(1.4);
   opacity: 0.5;
+}
+.menu4 p {
+  font-size: 1.6em;
 }
 .menu4 a {
   background: -webkit-linear-gradient(left, #0e960c, #aff7b7);
@@ -224,29 +244,20 @@ header {
   color: yellow;
   font-size: 3.5em;
 }
-.soon .load {
-  position: absolute;
-  left: 58%;
-  width: 150px;
-  height: 50px;
-}
-.soon .point {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: yellow;
-  left: 15%;
-  animation: point 0.5s alternate infinite ease;
-}
-.soon .point:nth-child(2) {
-  left: 45%;
+.soon #dot1 {
+  opacity: 0;
+  animation: dot 1.2s infinite;
   animation-delay: 0.2s;
 }
-.soon .point:nth-child(3) {
-  left: auto;
-  right: 15%;
-  animation-delay: 0.3s;
+.soon #dot2 {
+  opacity: 0;
+  animation: dot 1.2s infinite;
+  animation-delay: 0.4s;
+}
+.soon #dot3 {
+  opacity: 0;
+  animation: dot 1.2s infinite;
+  animation-delay: 0.6s;
 }
 
 footer {
