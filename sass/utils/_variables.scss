@@ -54,6 +54,11 @@ $yellowtxt: yellow;
 	margin-bottom: 200px;
 }
 
+@mixin menuchoix {
+	display: flex;
+	justify-content: space-between;
+}
+
 @mixin header {
 	display: flex;
 	justify-content: center;
