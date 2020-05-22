@@ -21,13 +21,13 @@ body {
   margin-bottom: 200px;
 }
 
-.menu {
+.cartes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.menu1 {
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,127 +37,73 @@ body {
   margin: 50px 50px 50px 50px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
-  background: #ffd8d8;
-  font-family: "alexbrush", Arial, Verdana, sans-serif;
-  font-size: 2em;
   font-weight: bold;
 }
-.menu1 a {
+.menu a {
   transform: scale(1);
   opacity: 1;
   transition: transform 0.5s;
 }
-.menu1:hover a {
+.menu:hover a {
   transform: scale(1.4);
   opacity: 0.5;
 }
-.menu1 p {
+
+.note {
+  background: #ffd8d8;
+  font-family: "alexbrush", Arial, Verdana, sans-serif;
+  font-size: 2em;
+}
+.note p {
   font-size: 2.3em;
   margin-top: 0px;
 }
-.menu1 .fas {
+.note .fas {
   background: -webkit-linear-gradient(left, #e83a3a, #e58639);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu1 a {
+.note a {
   color: #4f3737;
 }
 
-.menu2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 30%;
-  height: 600px;
-  margin: 50px 50px 50px 50px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 3px 3px 10px 3px #e0e0e0;
+.chic {
   background: #faedfc;
   font-family: "roman", Arial, Verdana, sans-serif;
-  font-weight: bold;
 }
-.menu2 a {
-  transform: scale(1);
-  opacity: 1;
-  transition: transform 0.5s;
-}
-.menu2:hover a {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-.menu2 p {
+.chic p {
   font-size: 1.7em;
   color: #d68f48;
 }
-.menu2 h2 {
+.chic h2 {
   font-size: 1.2em;
   background: -webkit-linear-gradient(left, #d68f48, #a055d6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.menu3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 30%;
-  height: 600px;
-  margin: 50px 50px 50px 50px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 3px 3px 10px 3px #e0e0e0;
+.delice {
   background: #f2f2f2;
   font-family: "calli", Arial, Verdana, sans-serif;
   font-size: 1.4em;
-  font-weight: bold;
 }
-.menu3 a {
-  transform: scale(1);
-  opacity: 1;
-  transition: transform 0.5s;
-}
-.menu3:hover a {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-.menu3 p {
+.delice p {
   font-size: 1.6em;
 }
-.menu3 a {
+.delice a {
   background: -webkit-linear-gradient(left, #1e30ed, #5db8f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.menu4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 30%;
-  height: 600px;
-  margin: 50px 50px 50px 50px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 3px 3px 10px 3px #e0e0e0;
+.gout {
   font-family: "kings", Arial, Verdana, sans-serif;
   font-size: 1.4em;
-  font-weight: bold;
 }
-.menu4 a {
-  transform: scale(1);
-  opacity: 1;
-  transition: transform 0.5s;
-}
-.menu4:hover a {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-.menu4 p {
+.gout p {
   font-size: 1.6em;
 }
-.menu4 a {
+.gout a {
   background: -webkit-linear-gradient(left, #0e960c, #aff7b7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,6 +137,91 @@ body {
   opacity: 0;
   animation: dot 1.2s infinite;
   animation-delay: 0.6s;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .menu {
+    width: 35%;
+    height: 580px;
+    margin: 20px;
+  }
+
+  .note {
+    font-size: 1.5em;
+  }
+  .note p {
+    font-size: 1.8em;
+  }
+
+  .chic a {
+    font-size: 0.8em;
+  }
+  .chic a p {
+    font-size: 1.5em;
+  }
+
+  .delice {
+    font-size: 1.1em;
+  }
+  .delice p {
+    font-size: 1.3em;
+  }
+
+  .gout {
+    font-size: 1.1em;
+  }
+  .gout p {
+    font-size: 1.3em;
+  }
+
+  .soon {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+@media all and (max-width: 900px) {
+  body {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .menu {
+    width: 35%;
+    height: 580px;
+    margin: 20px;
+  }
+
+  .note {
+    font-size: 1.3em;
+  }
+  .note p {
+    font-size: 1.5em;
+  }
+
+  .soon {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 2.5em;
+  }
+}
+@media all and (max-width: 600px) {
+  .menu {
+    width: 40%;
+    height: 530px;
+  }
+
+  .soon {
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

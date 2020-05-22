@@ -1,11 +1,6 @@
 @import "./utils/variables";
 
-body {
-	@include bodymenu;
-}
-
 .titre {
-	font-size: 3em;
 	margin-bottom: 20px;
 	background: -webkit-linear-gradient(left, #d68f48, #a055d6);
 	-webkit-background-clip: text;
@@ -13,7 +8,6 @@ body {
 }
 
 .card {
-	@include menucards;
 	font-family: 'roman', Arial, Verdana, sans-serif;
 	font-size: 1.1em;
 	background: #faedfc;
@@ -27,46 +21,24 @@ body {
 	}
 
 	.titre-menu {
-		display: flex;
-		justify-content: space-between;
-		align-items:center;
-		margin-top: 80px;
-		img {
-			width: 30%;
-		}
-		.underline {
-			@include underline;
-		}
 		.underline:hover {
-			background-size: 100% 100%;
 			padding-bottom: 8px;
 		}
 	}
 
-	#menu1 {
-		color: #e8aa47;
-	}
-
 	.entree {
-		@include menuchoix;
 		color: #e8aa47;
-	}
-
-	#menu2 {
-		color: #bf75d8;
 	}
 
 	.plat {
-		@include menuchoix;
 		color: #bf75d8;
-	}
-
-	#menu3 {
-		color: #603bce;
 	}
 
 	.dessert {
 		color: #603bce;
-		text-align: left;
+		.dessert1 {
+			text-align: left;
+		}
 	}
+
 }

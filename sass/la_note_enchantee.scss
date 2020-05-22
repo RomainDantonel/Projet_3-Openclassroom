@@ -1,17 +1,11 @@
 @import "./utils/variables";
 
-body {
-	@include bodymenu;
-}
-
 .titre {
-	font-size: 3em;
 	color: rgb(79, 55, 55);
 	margin-bottom: 20px;
 }
 
 .card {
-	@include menucards;
 	font-family: 'alexbrush', Arial, Verdana, sans-serif;
 	font-size: 1.8em;
 	background: #ffd8d8;
@@ -21,26 +15,6 @@ body {
 		background: -webkit-linear-gradient(left, #e83a3a, #e58639);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-	}
-
-	.titre-menu {
-		margin-top: 80px;
-		display: flex;
-		justify-content: space-between;
-		align-items:center;
-		img {
-			width: 30%;
-		}
-		.underline {
-			@include underline;
-		}
-		.underline:hover {
-			background-size: 100% 100%;
-		}
-	}
-
-	.menu {
-		@include menuchoix;
 	}
 
 	.dessert {

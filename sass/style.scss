@@ -24,20 +24,23 @@ body {
 	margin-bottom: 200px;
 }
 
-.menu {
+.cartes {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.menu1 {
+.menu {
 	@include cards;
-	background: #ffd8d8;
-	font-family: 'alexbrush', Arial, Verdana, sans-serif;
-	font-size: 2em;
 	font-weight: bold;
 	@include animenu;
 	@include animhover;
+}
+
+.note {
+	background: #ffd8d8;
+	font-family: 'alexbrush', Arial, Verdana, sans-serif;
+	font-size: 2em;
 	p {
 		font-size: 2.3em;
 		margin-top: 0px;
@@ -52,13 +55,9 @@ body {
 	}
 }	
 
-.menu2 {
-	@include cards;
+.chic {
 	background: #faedfc;
 	font-family: 'roman', Arial, Verdana, sans-serif;
-	font-weight: bold;
-	@include animenu;
-	@include animhover;
 	p {
 		font-size: 1.7em;
 		color: #d68f48;
@@ -71,14 +70,10 @@ body {
 	}
 }
 
-.menu3 {
-	@include cards;
+.delice {
 	background: #f2f2f2;
 	font-family: 'calli', Arial, Verdana, sans-serif;
 	font-size: 1.4em;
-	font-weight: bold;
-	@include animenu;
-	@include animhover;
 	p {
 		font-size: 1.6em;
 	}
@@ -89,13 +84,9 @@ body {
 	}
 }
 
-.menu4 {
-	@include cards;
+.gout {
 	font-family: 'kings', Arial, Verdana, sans-serif;
 	font-size: 1.4em;
-	font-weight: bold;
-	@include animenu;
-	@include animhover;
 	p {
 		font-size: 1.6em;
 	}
@@ -136,3 +127,85 @@ body {
 		animation-delay: 0.6s;
 	}
 }
+
+@media all and (max-width: 1024px) {
+
+	body {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+	.menu {
+		width: 35%;
+		height: 580px;
+		margin: 20px;
+	}
+	.note {
+		font-size: 1.5em;
+		p {
+			font-size: 1.8em;
+		}
+	}
+	.chic a {
+		font-size: 0.8em; 
+		p {
+			font-size: 1.5em;
+		}
+	}
+	.delice {
+		font-size: 1.1em;
+		p {
+			font-size: 1.3em;
+		}
+	}
+	.gout {
+		font-size: 1.1em;
+		p {
+			font-size: 1.3em;
+		}
+	}
+	.soon {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	footer {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 900px) {
+
+	body {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+	.menu {
+		width: 35%;
+		height: 580px;
+		margin: 20px;
+	}
+		.note {
+		font-size: 1.3em;
+		p {
+			font-size: 1.5em;
+		}
+	}
+	.soon {
+		margin-bottom: 0;
+		margin-top: 0;
+		font-size: 2.5em;
+	}
+}
+
+@media all and (max-width: 600px) {
+
+	.menu {
+		width: 40%;
+		height: 530px;
+	}
+
+	.soon {
+		margin-top: 50px;
+	}
+
+}
+

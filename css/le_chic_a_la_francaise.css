@@ -1,14 +1,4 @@
-body {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 200px;
-}
-
 .titre {
-  font-size: 3em;
   margin-bottom: 20px;
   background: -webkit-linear-gradient(left, #d68f48, #a055d6);
   -webkit-background-clip: text;
@@ -16,14 +6,6 @@ body {
 }
 
 .card {
-  width: 70%;
-  padding: 150px 50px 150px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 3px 3px 10px 3px #e0e0e0;
   font-family: "roman", Arial, Verdana, sans-serif;
   font-size: 1.1em;
   background: #faedfc;
@@ -34,45 +16,19 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card .titre-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 80px;
-}
-.card .titre-menu img {
-  width: 30%;
-}
-.card .titre-menu .underline {
-  text-decoration: none;
-  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
-}
 .card .titre-menu .underline:hover {
-  background-size: 100% 100%;
   padding-bottom: 8px;
 }
-.card #menu1 {
-  color: #e8aa47;
-}
 .card .entree {
-  display: flex;
-  justify-content: space-between;
   color: #e8aa47;
-}
-.card #menu2 {
-  color: #bf75d8;
 }
 .card .plat {
-  display: flex;
-  justify-content: space-between;
   color: #bf75d8;
-}
-.card #menu3 {
-  color: #603bce;
 }
 .card .dessert {
   color: #603bce;
+}
+.card .dessert .dessert1 {
   text-align: left;
 }
 

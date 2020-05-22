@@ -31,6 +31,38 @@
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+.bodymenu {
+	@include bodymenu;
+}
+
+.titre {
+	font-size: 3em;
+}
+
+.card {
+	@include menucards;
+
+	.titre-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		margin-top: 80px;
+		img {
+			width: 30%;
+		}
+		.underline {
+			@include underline;
+		}
+		.underline:hover {
+			background-size: 100% 100%;
+		}
+	}
+	.menu {
+		@include menuchoix;
+	}	
+}
+
+
 a {
 	text-decoration: none;
 }
@@ -45,4 +77,30 @@ footer {
 
 .liens:hover {
 	animation: shake 0.5s infinite;
+}
+
+@media all and (max-width: 1024px) {
+
+	footer {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 900px) {
+
+	  footer {
+    width: 100%;
+  }
+  footer a {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+	header {
+		a {
+		font-size: 3em;
+		}
+	}
 }
