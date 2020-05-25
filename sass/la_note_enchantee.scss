@@ -32,3 +32,17 @@
 		}
 	}
 }
+
+@media all and (max-width: 1024px) {
+
+ 	.card {
+ 		font-size: 1.5em;
+ 	}
+}
+
+@media all and (max-width: 900px) {
+
+ 	.card {
+ 		font-size: 1.3em;
+ 	}
+}

@@ -18,4 +18,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media all and (max-width: 900px) {
+  .card {
+    font-size: 1.3em;
+  }
+}
+
 /*# sourceMappingURL=la_palette_du_gout.css.map */

@@ -59,6 +59,9 @@
 	}
 	.menu {
 		@include menuchoix;
+		.left {
+			text-align: left;
+		}
 	}	
 }
 
@@ -81,26 +84,39 @@ footer {
 
 @media all and (max-width: 1024px) {
 
+	.bodymenu {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
 	footer {
 		width: 100%;
 	}
+	.card {
+		width: 70%;
+		padding: 50px 50px 50px 50px;
+		.titre-menu {
+			margin-top: 30px;
+		}
+	}
 }
+
 
 @media all and (max-width: 900px) {
 
-	  footer {
-    width: 100%;
-  }
-  footer a {
-    font-size: 2em;
-  }
+	footer {
+		width: 100%;
+	}
+	footer a {
+		font-size: 2em;
+	}
 }
 
 @media all and (max-width: 600px) {
 
 	header {
 		a {
-		font-size: 3em;
+			font-size: 3em;
 		}
 	}
 }
