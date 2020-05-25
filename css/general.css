@@ -139,7 +139,6 @@ footer a {
 @media all and (max-width: 1024px) {
   .bodymenu {
     width: 100%;
-    margin-bottom: 100px;
   }
 
   footer {
@@ -164,8 +163,12 @@ footer a {
   }
 }
 @media all and (max-width: 600px) {
+  .titre {
+    font-size: 2.5em;
+  }
+
   header a {
-    font-size: 3em;
+    font-size: 2.6em;
   }
 }
 
