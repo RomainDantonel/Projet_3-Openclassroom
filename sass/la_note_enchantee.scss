@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import "./utils/variables";
 
 .titre {
@@ -22,8 +29,14 @@
 	}
 
 	.pied {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: baseline;
+		-ms-flex-align: baseline;
 		align-items: baseline;
 		margin-top: 50px;
 
@@ -35,14 +48,14 @@
 
 @media all and (max-width: 1024px) {
 
- 	.card {
- 		font-size: 1.5em;
- 	}
+	.card {
+		font-size: 1.5em;
+	}
 }
 
 @media all and (max-width: 900px) {
 
- 	.card {
- 		font-size: 1.3em;
- 	}
+	.card {
+		font-size: 1.3em;
+	}
 }

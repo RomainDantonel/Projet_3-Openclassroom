@@ -1,3 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+@-webkit-keyframes dot {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes dot {
   0% {
     opacity: 0;
@@ -22,29 +51,49 @@ body {
 }
 
 .cartes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   width: 30%;
   height: 600px;
   margin: 50px 50px 50px 50px;
   border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 3px 3px 10px 3px #e0e0e0;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
   font-weight: bold;
 }
 .menu a {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .menu:hover a {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
   transform: scale(1.4);
   opacity: 0.5;
 }
@@ -89,8 +138,11 @@ body {
 }
 .delice p {
   font-size: 1.6em;
+  background: -webkit-linear-gradient(left, #1e30ed, #5db8f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.delice a {
+.delice h2 {
   background: -webkit-linear-gradient(left, #1e30ed, #5db8f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -102,16 +154,25 @@ body {
 }
 .gout p {
   font-size: 1.6em;
+  background: -webkit-linear-gradient(left, #0e960c, #aff7b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.gout a {
+.gout h2 {
   background: -webkit-linear-gradient(left, #0e960c, #aff7b7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: auto;
   margin-top: 50px;
@@ -125,17 +186,23 @@ body {
 }
 .soon #dot1 {
   opacity: 0;
+  -webkit-animation: dot 1.2s infinite;
   animation: dot 1.2s infinite;
+  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 .soon #dot2 {
   opacity: 0;
+  -webkit-animation: dot 1.2s infinite;
   animation: dot 1.2s infinite;
+  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 .soon #dot3 {
   opacity: 0;
+  -webkit-animation: dot 1.2s infinite;
   animation: dot 1.2s infinite;
+  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
@@ -215,11 +282,12 @@ body {
 }
 @media all and (max-width: 600px) {
   .menu {
-    width: 40%;
+    width: 70%;
     height: 530px;
   }
 
   .soon {
+    width: 60%;
     margin-top: 50px;
     font-size: 1.5em;
   }

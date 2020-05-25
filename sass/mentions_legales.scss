@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import "./utils/variables";
 
 body {
@@ -16,5 +23,6 @@ footer {
 }
 
 .liens:hover {
-animation: shake 0.5s infinite;
+-webkit-animation: shake 0.5s infinite;
+        animation: shake 0.5s infinite;
 }

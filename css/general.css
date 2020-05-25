@@ -1,3 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 @font-face {
   font-family: "alexbrush";
   src: url("fonts/AlexBrush-Regular.ttf");
@@ -14,45 +26,109 @@
   font-family: "kings";
   src: url("fonts/Kingthings_Foundation.ttf");
 }
-@keyframes shake {
+@-webkit-keyframes shake {
   0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
     transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
     transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
     transform: translate(-3px, 0px) rotate(1deg);
   }
   30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
     transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
     transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
     transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
     transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
     transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
     transform: translate(-1px, -1px) rotate(1deg);
   }
   90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
     transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 .bodymenu {
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: auto;
   margin-bottom: 200px;
@@ -65,16 +141,30 @@
 .card {
   width: 70%;
   padding: 150px 50px 150px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   font-weight: bold;
+  -webkit-box-shadow: 3px 3px 10px 3px #e0e0e0;
   box-shadow: 3px 3px 10px 3px #e0e0e0;
 }
 .card .titre-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 80px;
 }
@@ -83,14 +173,22 @@
 }
 .card .titre-menu .underline {
   text-decoration: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(10%, black), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: -o-linear-gradient(bottom, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size 0.5s;
+  -o-transition: background-size 0.5s;
   transition: background-size 0.5s;
 }
 .card .titre-menu .underline:hover {
   background-size: 100% 100%;
 }
 .card .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .card .menu .left {
@@ -102,8 +200,14 @@ a {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 200px;
@@ -116,8 +220,14 @@ header a {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 70%;
   height: 100px;
@@ -133,6 +243,7 @@ footer a {
 }
 
 .liens:hover {
+  -webkit-animation: shake 0.5s infinite;
   animation: shake 0.5s infinite;
 }
 
@@ -167,8 +278,20 @@ footer a {
   }
 }
 @media all and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
   header a {
-    font-size: 2.6em;
+    font-size: 1.6em;
+  }
+
+  .card {
+    width: 80%;
+    padding: 30px 10px 30px 10px;
+  }
+
+  footer a {
+    font-size: 1.5em;
   }
 }
 

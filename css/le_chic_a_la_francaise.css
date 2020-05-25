@@ -1,3 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .titre {
   margin-bottom: 20px;
   background: -webkit-linear-gradient(left, #d68f48, #a055d6);
@@ -32,9 +44,9 @@
   text-align: left;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 600px) {
   .card {
-    font-size: 1em;
+    font-size: 0.66em;
   }
 }
 

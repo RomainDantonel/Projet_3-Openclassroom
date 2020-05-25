@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import "./utils/variables";
 
 .titre {
@@ -43,9 +50,9 @@
 
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 600px) {
 
- 	.card {
- 		font-size: 1em;		
- 	}
+	.card {
+		font-size: 0.66em;
+	}
 }
