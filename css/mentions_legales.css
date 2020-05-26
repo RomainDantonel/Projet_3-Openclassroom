@@ -47,7 +47,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
   height: 100px;
   background-color: #4aa879;
   position: fixed;
